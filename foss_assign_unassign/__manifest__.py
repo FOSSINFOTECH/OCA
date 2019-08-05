@@ -1,25 +1,26 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
-
 {
-    'name': "Sale Revision",
-
-    'summary': """Create and Apply Revision""",
-
-    'author': "FOSS INFOTECH PVT LTD, Odoo Community Association (OCA)",
-
-    'license': 'AGPL-3',
-
-    'website': "http://www.fossinfotech.com",
-
-    'category': 'Sale',
+    'name': 'Assign/Unassign Followers',
 
     'version': '12.0.0.0.0',
 
-    'depends': ['sale', 'sale_management'],
+    'summary': 'Assign and Unassign Followers',
+
+    'author': 'FOSS INFOTECH PVT LTD, Odoo Community Association (OCA)',
+
+    'license': 'AGPL-3',
+
+    'sequence': 10,
+
+    'website': 'http://www.fossinfotech.com',
+
+    'category': 'Tools',
+
+    'website': 'https://www.fossinfotech.com/',
 
     'data': [
-        'security/ir.model.access.csv',
-        'views/sale_revision_views.xml',
+        'views/assign_followers_view.xml',
+        'security/ir.model.access.csv'
     ],
 
     'images': [
@@ -29,8 +30,6 @@
     ],
 
     'installable': True,
-
-    'auto_install': False,
-
     'application': True,
+    'auto_install': False,
 }
